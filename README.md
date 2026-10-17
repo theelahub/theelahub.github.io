@@ -3,6 +3,8 @@
 Separate static game hosting for The ELA Hub. The publication basis for each
 package is recorded in games-manifest.json and its PROVENANCE.md.
 
+Published at https://theelahub.github.io/.
+
 ## Included Games
 
 | Game | Author | Permission | Files |
