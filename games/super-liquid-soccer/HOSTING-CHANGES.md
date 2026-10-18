@@ -1,8 +1,14 @@
-# Hosting changes
+# Hosting Changes
 
-The source deployment has no PWA manifest, app icons or service worker at the
-referenced URLs. This host points the icons at the supplied index.png, removes
-the unavailable manifest link, and disables registration of that missing worker.
-The engine, game payload and SDK bytes are unchanged. Original source hashes
-remain in ASSET-MANIFEST.json; its index.html hash identifies the unmodified
-download, not this hosting-adapted HTML. PROVENANCE.md records the source basis.
+Compared with the pinned source's index.html:
+
+- Title is Super Liquid Soccer.
+- Removed the unconditional portal-navigation redirect to ubg98.github.io.
+- Removed the portal analytics and promotional-client script includes.
+- Corrected the PCK download-size hint to 13,430,256 bytes.
+- Disabled PWA registration and removed its manifest link. The supplied manifest
+  references absent 180px and 512px icons; offline installation is not required.
+
+No engine, game payload, SDK, ad callback, origin check, or gameplay code was
+changed. All required runtime files are retained byte-for-byte. The original
+entrypoint remains available at the pinned source commit.

@@ -1,98 +1,82 @@
 {
-  "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/",
-  "sourceCommit": null,
-  "sourcePinning": "deployment-unpinned-asset-hashes-recorded",
+  "sourceUrl": "https://github.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io",
+  "sourceCommit": "1f91513e9134bc31ba87df29920ef5e46fc2b076",
   "permissionStatus": "owner-reported-not-verified",
-  "permissionReport": "Website owner/user reports rights-holder permission to copy and self-host; not independently verified.",
-  "sourceContentChanges": [],
   "assets": [
     {
       "path": "index.html",
-      "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.html",
-      "responseUrl": "https://db.duckmath.org/html/super_liquid_soccer/",
-      "fetchedAt": "2026-10-17T02:41:04.775Z",
-      "bytes": 9687,
-      "sha256": "d0b9785d2f914c2dc2c2b948dec1f50afa6be76476f64a2866a2bf06cf85fbe3",
-      "contentType": "text/html; charset=utf-8",
-      "etag": null,
-      "lastModified": null
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/index.html",
+      "bytes": 7927,
+      "sha256": "34100ef5ed426b58959ca530600dfd2bb2c6fd9f3e3a5e8e54af095ed1434267",
+      "hostedBytes": 7658,
+      "hostedSha256": "b235ebce765f479271656d93031464b567bcb5e30a8bdcbff9d15f3a93c252db"
     },
     {
       "path": "index.js",
-      "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.js",
-      "responseUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.js",
-      "fetchedAt": "2026-10-17T02:41:04.886Z",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/index.js",
       "bytes": 350562,
-      "sha256": "9d2bb77918c108356cf626592260eb727597ab496765202d4651eaca84566a25",
-      "contentType": "application/javascript",
-      "etag": "W/\"94acc70a04ad9e7e2e3edb10800b21c8\"",
-      "lastModified": null
+      "sha256": "9d2bb77918c108356cf626592260eb727597ab496765202d4651eaca84566a25"
     },
     {
       "path": "index.wasm",
-      "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.wasm",
-      "responseUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.wasm",
-      "fetchedAt": "2026-10-17T02:41:06.749Z",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/index.wasm",
       "bytes": 13789463,
-      "sha256": "d6144c802eb84a93884ecd172670f4ce5036b85dec45a0230ce8e3f78d5f02bc",
-      "contentType": "application/wasm",
-      "etag": "W/\"618f368179449abcce652adbd3c76652\"",
-      "lastModified": null
+      "sha256": "d6144c802eb84a93884ecd172670f4ce5036b85dec45a0230ce8e3f78d5f02bc"
     },
     {
       "path": "index.pck",
-      "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.pck",
-      "responseUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.pck",
-      "fetchedAt": "2026-10-17T02:41:10.651Z",
-      "bytes": 14088880,
-      "sha256": "64830d2e16802934e85fbd778f553d4e9b04cca7bf4e12a7ae05bad6371ed431",
-      "contentType": "application/octet-stream",
-      "etag": "\"75eb8ebb5d4145097eebec0bd030b82c\"",
-      "lastModified": null
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/index.pck",
+      "bytes": 13430256,
+      "sha256": "25b07d4fcce00c851032d5b5639c68d76eb055a8ca73470fe48c28ac73ba47d9"
     },
     {
       "path": "index.png",
-      "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.png",
-      "responseUrl": "https://db.duckmath.org/html/super_liquid_soccer/index.png",
-      "fetchedAt": "2026-10-17T02:41:10.704Z",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/index.png",
       "bytes": 16651,
-      "sha256": "527dc1b24b8f50d0ae19e1c57a32409130390eb7a2a8ed55cec8796ce93464ab",
-      "contentType": "image/png",
-      "etag": "\"52ba89f1e5e2e05dbb2bb86f87c236ba\"",
-      "lastModified": null
+      "sha256": "527dc1b24b8f50d0ae19e1c57a32409130390eb7a2a8ed55cec8796ce93464ab"
     },
     {
-      "path": "patch/poki-sdk.js",
-      "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/patch/poki-sdk.js",
-      "responseUrl": "https://db.duckmath.org/html/super_liquid_soccer/patch/poki-sdk.js",
-      "fetchedAt": "2026-10-17T02:41:10.824Z",
-      "bytes": 3218,
-      "sha256": "c37a843eefa984af4c768680deb9a5d923c950f5e24b144a6119ae37f38e971a",
-      "contentType": "application/javascript",
-      "etag": "W/\"12b75c6182795ac70074e4b63272b9a6\"",
-      "lastModified": null
+      "path": "index.icon.png",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/index.icon.png",
+      "bytes": 7839,
+      "sha256": "0017d82e19297e4c6474ebeaa2115114f900d637962eace6fba9c6bad875a723"
     },
     {
-      "path": "patch/poki-sdk-core-v2.263.0.js",
-      "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/patch/poki-sdk-core-v2.263.0.js",
-      "responseUrl": "https://db.duckmath.org/html/super_liquid_soccer/patch/poki-sdk-core-v2.263.0.js",
-      "fetchedAt": "2026-10-17T02:41:10.868Z",
-      "bytes": 173433,
-      "sha256": "29fc2fff21c00622d31d9af7996f23fc3ea608709a46e39e0217998ac4ec89dd",
-      "contentType": "application/javascript",
-      "etag": "W/\"b8add175d4afe4e94e9db559e22041da\"",
-      "lastModified": null
+      "path": "index.apple-touch-icon.png",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/index.apple-touch-icon.png",
+      "bytes": 6152,
+      "sha256": "47c0f71c392c3f6081e25091be1d8fa55ddca4d514d8d104acd0d0c7e7f2f100"
+    },
+    {
+      "path": "patch/js/poki-sdk-v2.js",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/patch/js/poki-sdk-v2.js",
+      "bytes": 5132,
+      "sha256": "5143377b8c22837af41b7ce1de2b0beda21808caf058acb7b6b3337bb01aa4f2"
+    },
+    {
+      "path": "patch/js/poki-sdk-v2.2-core.js",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/patch/js/poki-sdk-v2.2-core.js",
+      "bytes": 252395,
+      "sha256": "19452ec578c9f9ec96a02695fca45f05b2610752b2c980f23c1f2d3d339632b6"
+    },
+    {
+      "path": "patch/js/null.js",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/patch/js/null.js",
+      "bytes": 35,
+      "sha256": "f0498c68eb0efca56bb1d2b16c2edf4c2b9f018ee83095660cc51bb84ba14cd0"
+    },
+    {
+      "path": "patch/json/geo.json",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/patch/json/geo.json",
+      "bytes": 32,
+      "sha256": "4ba73e96af4c7263423c3225081ee79916a6d49c5265a13ce65cdd82362fabc8"
     },
     {
       "path": "patch/json/null.json",
-      "sourceUrl": "https://db.duckmath.org/html/super_liquid_soccer/patch/json/null.json",
-      "responseUrl": "https://db.duckmath.org/html/super_liquid_soccer/patch/json/null.json",
-      "fetchedAt": "2026-10-17T02:41:26.107Z",
+      "sourceUrl": "https://raw.githubusercontent.com/SuperLiquidSoccer/SuperLiquidSoccer.github.io/1f91513e9134bc31ba87df29920ef5e46fc2b076/patch/json/null.json",
       "bytes": 2,
-      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-      "contentType": "application/json",
-      "etag": "\"ec47da64e7da6749028b38bc647d8a22\"",
-      "lastModified": null
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
     }
-  ]
+  ],
+  "publicationStatus": "approved-for-github-pages"
 }

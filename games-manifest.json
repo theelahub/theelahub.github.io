@@ -13,5 +13,5 @@
   { "id": "deepest-sword", "title": "Deepest Sword", "permission": "owner-reported", "notice": "games/deepest-sword/PROVENANCE.md", "required": ["Build/WebBuilds.loader.js", "Build/WebBuilds.data", "Build/WebBuilds.framework.js", "Build/WebBuilds.wasm"] },
   { "id": "doodle-jump", "title": "HTML5 Doodle Jump", "permission": "owner-reported", "notice": "games/doodle-jump/PROVENANCE.md", "required": ["main.js", "sprites.png"] },
   { "id": "xx142-b2.exe", "title": "xx142-b2.exe", "permission": "owner-reported", "notice": "games/xx142-b2.exe/PROVENANCE.md", "required": ["main.min.js"] },
-  { "id": "super-liquid-soccer", "title": "Super Liquid Soccer", "permission": "owner-reported", "notice": "games/super-liquid-soccer/PROVENANCE.md", "required": ["index.js", "index.wasm", "index.pck", "patch/poki-sdk.js", "patch/poki-sdk-core-v2.263.0.js", "patch/json/null.json"] }
+  {"id":"super-liquid-soccer","title":"Super Liquid Soccer","permission":"owner-reported","notice":"games/super-liquid-soccer/PROVENANCE.md","required":["index.js","index.wasm","index.pck","index.icon.png","index.apple-touch-icon.png","patch/js/poki-sdk-v2.js","patch/js/poki-sdk-v2.2-core.js","patch/js/null.js","patch/json/geo.json","patch/json/null.json"]}
 ]
