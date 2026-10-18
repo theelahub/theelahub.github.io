@@ -1,0 +1,11 @@
+{
+  "sourceRepository": "https://github.com/a456pur/seraph",
+  "sourceCommit": "ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7",
+  "sourceDirectory": "games/bitlife/Build/",
+  "assets": [
+    { "path": "Build/BitLife.data.unityweb", "bytes": 14312854, "sha256": "dc43e0a93d4ea37edaa8ff304d1e3b8f1558e4df47a0acaa0633de2989aa7fe9" },
+    { "path": "Build/BitLife.wasm.code.unityweb", "bytes": 5614320, "sha256": "d032e3018ce078bb177629e84ae7d09177b24676baa2e27c8a9b7c11b020f440" },
+    { "path": "Build/BitLife.wasm.framework.unityweb", "bytes": 75838, "sha256": "85e4735e60fc9477941f65483c8b263300da00f543de0df16f1b04c02df597cd" },
+    { "path": "Build/UnityLoader.js", "bytes": 324823, "sha256": "74050127bc6edf8815064a26b77edfc42a985c950f3c1349d134c6f66391f9e7" }
+  ]
+}

@@ -3,6 +3,37 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import vm from "node:vm";
 import { createHash } from "node:crypto";
+import { brotliDecompressSync } from "node:zlib";
+
+test("BitLife retains a complete pinned runtime and the original SDK address", async () => {
+  const root = new URL("games/bitlife/", import.meta.url);
+  const manifest = JSON.parse(await readFile(new URL("ASSET-MANIFEST.json", root), "utf8"));
+  assert.equal(manifest.sourceCommit, "ae2fcc6d6a9cd051654fcc0519080db1f79cf2a7");
+  for (const asset of manifest.assets) {
+    const bytes = await readFile(new URL(asset.path, root));
+    assert.equal(bytes.length, asset.bytes, asset.path);
+    assert.equal(createHash("sha256").update(bytes).digest("hex"), asset.sha256, asset.path);
+  }
+  const config = JSON.parse(await readFile(new URL("Build/BitLife.json", root), "utf8"));
+  const wasm = brotliDecompressSync(await readFile(new URL(`Build/${config.wasmCodeUrl}`, root)));
+  assert.equal(WebAssembly.validate(wasm), true);
+  const data = brotliDecompressSync(await readFile(new URL(`Build/${config.dataUrl}`, root)));
+  assert.equal(data.subarray(0, 16).toString(), "UnityWebData1.0\0");
+  const headerLength = data.readUInt32LE(16);
+  let cursor = 20;
+  assert.ok(headerLength > cursor && headerLength <= data.length);
+  while (cursor < headerLength) {
+    assert.ok(cursor + 12 <= headerLength);
+    const offset = data.readUInt32LE(cursor);
+    const size = data.readUInt32LE(cursor + 4);
+    const nameLength = data.readUInt32LE(cursor + 8);
+    cursor += 12 + nameLength;
+    assert.ok(cursor <= headerLength && offset >= headerLength && offset + size <= data.length);
+  }
+  const framework = brotliDecompressSync(await readFile(new URL(`Build/${config.wasmFrameworkUrl}`, root))).toString();
+  assert.ok(framework.includes('//html5.api.gamedistribution.com/main.min.js'));
+  assert.equal(framework.includes('js.src="/main.min.js"'), false);
+});
 
 test("Retro Bowl optional SDK absence never throws or fabricates an ad reward", async () => {
   const source = await readFile(new URL("games/retro-bowl/html5game/uph_poki.js", import.meta.url), "utf8");
